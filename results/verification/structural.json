@@ -1,0 +1,18 @@
+{
+ "rank_general": 4,
+ "n_general": 6,
+ "rank_ladder": 4,
+ "n_ladder": 4,
+ "rank_ladder_alpha": 4,
+ "n_ladder_alpha": 5,
+ "ladder_inverse_solutions": 1,
+ "alpha_lt1_two_roots_same_tf": true,
+ "alpha_ref_branch_params": {
+  "Cg": 22.5,
+  "Ch": 706.0159344845497,
+  "Rgh": 0.013191693470667898,
+  "Rha": 0.05010622989699909,
+  "alpha": 0.75
+ },
+ "passed": true
+}

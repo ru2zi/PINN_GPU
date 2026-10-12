@@ -1,0 +1,21 @@
+{
+ "alpha1": {
+  "alpha": 1.0,
+  "T_at_25W": 28.054166666666674,
+  "T_at_600W": 50.000000000000014,
+  "monotone": true,
+  "finite": true,
+  "zero_power_returns_to_Ta": true,
+  "max_dev_from_analytic_K": 1.4210854715202004e-14
+ },
+ "alpha0p75": {
+  "alpha": 0.75,
+  "T_at_25W": 27.87048958333334,
+  "T_at_600W": 45.591750000000005,
+  "monotone": true,
+  "finite": true,
+  "zero_power_returns_to_Ta": true,
+  "max_dev_from_analytic_K": 1.7763568394002505e-14
+ },
+ "passed": true
+}

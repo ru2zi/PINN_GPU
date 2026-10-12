@@ -1,0 +1,5 @@
+split,conditions,runs,eval_windows,train_windows,eval_low_coverage,eval_short_history,main_p,main_t,all_p,all_t
+train,6,18,2090,4169.0,0,0,11–664,26–52,10–679,25–52
+val,3,9,1034,,0,0,82–673,30–51,10–676,26–51
+test_interp,5,15,1689,,0,0,,,,
+test_shift,3,9,1030,,0,0,,,,

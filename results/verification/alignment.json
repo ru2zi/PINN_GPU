@@ -1,0 +1,104 @@
+{
+ "run": "T02-A/r01",
+ "params": {
+  "Cg": 13.651136930826915,
+  "Ch": 4656.804435975711,
+  "Rgh": 0.02938833333333333,
+  "Rha": 0.00877833333333333,
+  "alpha": 1.0
+ },
+ "Ta": 27.1,
+ "tau": [
+  0.4000000000000001,
+  41.000000000000014
+ ],
+ "stages": {
+  "1": {
+   "n_windows": 116,
+   "n_dropped": 0,
+   "true_params_rms_K_last_0p1": 0.0016646245606072346,
+   "true_params_rms_K_last_0p5": 0.011082799289759774,
+   "true_params_rms_K_last_sample": 0.0001840871985905538
+  },
+  "2": {
+   "n_windows": 116,
+   "n_dropped": 0,
+   "true_params_rms_K_last_0p1": 0.011399479230847165,
+   "true_params_rms_K_last_0p5": 0.01688104972090345,
+   "true_params_rms_K_last_sample": 0.011115746244774093,
+   "fitted_rms_K": 0.009207351566910462,
+   "fitted_tau": [
+    0.4138467146469285,
+    41.17417442720792
+   ],
+   "fitted_Ta": 27.00553511425655,
+   "fit_converged": true,
+   "fit_reason": "변화량 기준",
+   "fit_loss": 9.261749434203439e-05,
+   "fit_starts_ok": 8,
+   "fit_starts_converged": 8,
+   "tau_fast_rel_err": 0.03461678661732104,
+   "tau_slow_rel_err": 0.00424815676116852
+  },
+  "3": {
+   "n_windows": 116,
+   "n_dropped": 0,
+   "true_params_rms_K_last_0p1": 0.018841589107900767,
+   "true_params_rms_K_last_0p5": 0.020613571708854753,
+   "true_params_rms_K_last_sample": 0.019527199056479184,
+   "fitted_rms_K": 0.06403797009793198,
+   "fitted_tau": [
+    0.36001666513786595,
+    33.43243887356518
+   ],
+   "fitted_Ta": 27.300321369071145,
+   "fit_converged": true,
+   "fit_reason": "변화량 기준",
+   "fit_loss": 0.025158057769714214,
+   "fit_starts_ok": 8,
+   "fit_starts_converged": 8,
+   "tau_fast_rel_err": 0.09995833715533531,
+   "tau_slow_rel_err": 0.18457466162036174
+  },
+  "4": {
+   "n_windows": 116,
+   "n_dropped": 0,
+   "true_params_rms_K_last_0p1": 0.028353392563053456,
+   "true_params_rms_K_last_0p5": 0.030039475538011482,
+   "true_params_rms_K_last_sample": 0.029039281650461282,
+   "fitted_rms_K": 0.06982273921963336,
+   "fitted_tau": [
+    0.36009575283717754,
+    33.42477763024915
+   ],
+   "fitted_Ta": 27.322890358075554,
+   "fit_converged": true,
+   "fit_reason": "변화량 기준",
+   "fit_loss": 0.025185915042760187,
+   "fit_starts_ok": 8,
+   "fit_starts_converged": 8,
+   "tau_fast_rel_err": 0.09976061790705637,
+   "tau_slow_rel_err": 0.1847615212134356
+  }
+ },
+ "adjacent_prediction_rms_K": {
+  "2->3": 0.015043473226741412,
+  "3->4": 0.013068869965917548
+ },
+ "alpha_ref_equivalence": {
+  "alpha_ref": 0.75,
+  "params": {
+   "Cg": 10.238352698120186,
+   "Ch": 4648.80019976287,
+   "Rgh": 0.03915567830083298,
+   "Rha": 0.008799907941041924,
+   "alpha": 0.75
+  },
+  "mean_window_rms_diff_K": 0.001354897029246077,
+  "max_window_rms_diff_K": 0.0024018434325434822
+ },
+ "alignment_error_stage1_K": 0.0016646245606072346,
+ "criterion_K": 0.02,
+ "chosen_start_rule": "last_0p1",
+ "passed": true
+}

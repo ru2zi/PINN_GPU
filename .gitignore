@@ -1,0 +1,9 @@
+# 원시 데이터 (제출물 제외, md5는 results/inventory.csv)
+PINN_DATA/
+# 참고 구현 (인용만)
+github_code/
+# 과제 가이드와 템플릿
+hw/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/

@@ -1,0 +1,32 @@
+{
+ "note": "spec 3절. train·validation 27 run(9개 조건 × 3). 단위 K. u_c는 알려진 성분만의 추정이며 NVML 기록 기준이다.",
+ "u_res": 0.2887,
+ "u_repeat": 0.1529,
+ "u_c": 0.3267,
+ "two_u_c": 0.6533,
+ "u_c_full_precision": 0.326657957940646,
+ "u_repeat_full_precision": 0.1528793254584134,
+ "dof_repeat": 18,
+ "s_i": {
+  "I01-8B-A": 0.1413,
+  "I01-Q7B-A": 0.2466,
+  "I02-A": 0.1364,
+  "T02-32B-A": 0.1282,
+  "T02-32B-A2": 0.247,
+  "T02-A": 0.0358,
+  "T02-B": 0.011,
+  "T04-A": 0.1101,
+  "T04-D": 0.1414
+ },
+ "drift_diagnostic": {
+  "u_control": 0.3498,
+  "slope": 0.1928,
+  "r": 0.4412,
+  "u_repeat_sq": 0.02337,
+  "explained_by_control_sq": 0.00455,
+  "residual_sq": 0.01882,
+  "note": "같은 표본(27 run)과 분모(18). 해석용이며 u_c에 더하지 않는다."
+ },
+ "u_timing": "12절 5단계(RC 추정 뒤)에 계산",
+ "u_cal": "unknown (u_c에 넣지 않음)"
+}

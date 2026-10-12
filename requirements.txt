@@ -1,0 +1,16 @@
+# 계산 환경: Python 3.10.12, 시스템 site-packages (conda 없음). 2026-10-11 `pip list`에서 고정.
+# PyTorch는 NVIDIA 컨테이너 빌드라 PyPI에 같은 버전이 없다. 다른 환경에서는 torch==2.1.* 를 쓴다.
+torch==2.1.0a0+32f93b1
+numpy==1.22.2
+scipy==1.11.1
+pandas==1.5.3
+matplotlib==3.7.3
+PyYAML==6.0.1
+sympy==1.12
+nbconvert==6.4.5
+nbformat==5.9.2
+ipykernel==6.25.2
+jupyter==1.0.0
+
+# 대조용 독립 구현(6.1절)은 설치하지 않고 github_code/torchdiffeq(0.2.5, commit 657943a)를 sys.path로 불러온다.
+# 같은 버전을 설치하려면: pip install torchdiffeq==0.2.5 --no-deps

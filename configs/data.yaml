@@ -1,0 +1,45 @@
+# 데이터 경로와 전처리 설정 (spec 2.6, 4.2, 7절). 절대 경로는 이 파일에만 둔다.
+paths:
+  raw_root: /home/work/SR/AIDC/PINN/PINN_DATA/single_gpu_rtxpro6000_cap600W
+  conditions: /home/work/SR/AIDC/PINN/PINN_DATA/conditions.csv
+  results: /home/work/SR/AIDC/PINN/results
+  figures: /home/work/SR/AIDC/PINN/figures
+  tables: /home/work/SR/AIDC/PINN/tables
+
+expected_runs: 51
+
+phases:
+  main: [train, checkpoint, inference, inference_prefill, inference_decode, idle_between]
+  warmup: warmup
+  cooldown: cooldown
+
+grid:
+  physics_s: 0.1        # 물리 모델 입력 격자
+  eval_s: 0.5           # 평가 격자
+  dlinear_s: 1.0        # DLinear-X 입력 격자
+
+task:
+  horizon_s: 60
+  lookback_candidates_s: [60, 120, 180]
+  stride_train_s: 5
+  stride_eval_s: 10
+
+masks:
+  # I01-32B: 첫 inference* 시점부터 60 s를 평가 mask에서 뺀다 (spec 2.5절)
+  drop_after_first_inference_s:
+    I01-32B-A: 60
+    I01-32B-B: 60
+
+splits:
+  train: [T02-A, T02-B, T02-32B-A, T02-32B-A2, T04-A, I01-Q7B-A]
+  val: [T04-D, I01-8B-A, I02-A]
+  test_interp: [I01-Q7B-B, I01-8B-B, I02-B, I01-32B-A, I01-32B-B]
+  test_shift: [I01-Q7B-C, I01-8B-C, I02-C]
+  unseen_subset: [I01-32B-A, I01-32B-B]
+
+seeds: [0, 1, 2, 3, 4]
+
+targets:
+  # 평가 정답은 원샘플에서 직접 만든다 (spec 2.6절 4)
+  min_samples_per_bin: 25   # 0.5 s bin당 명목 약 50개의 절반
+  min_valid_frac: 0.9       # window의 유효 정답 bin 비율 하한

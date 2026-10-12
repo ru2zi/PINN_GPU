@@ -1,0 +1,26 @@
+{
+ "n_windows": 12,
+ "batch_vs_individual_max_abs_K": 1.4210854715202004e-14,
+ "multistart_failure_isolated": true,
+ "termination_reason_ok": true,
+ "fit_max_iter3": {
+  "n_iter": 1,
+  "func_evals": 3,
+  "reason": "평가 제한",
+  "converged": false
+ },
+ "fit_max_iter30": {
+  "n_iter": 30,
+  "func_evals": 33,
+  "reason": "반복 제한",
+  "converged": false
+ },
+ "loss_batch": 5.925989808693339,
+ "loss_individual": 5.925989808693338,
+ "loss_rel_diff": 2.997569852034443e-16,
+ "nan_target_loss": 5.985566486818653,
+ "nan_reference_loss": 5.985566486818653,
+ "nan_handled": true,
+ "float32_rejected": true,
+ "passed": true
+}

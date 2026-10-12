@@ -1,0 +1,7 @@
+run_id,t0,integer_second,start_T_same,observer_same,lookback_same,past_bins_same,plan_changed,future_1s_changed,target_changed
+T02-A/r01,204.5,False,True,True,True,True,True,True,True
+T02-A/r01,214.5,False,True,True,True,True,True,True,True
+I01-Q7B-A/r02,188.0,True,True,True,True,True,True,True,True
+I01-Q7B-A/r02,198.0,True,True,True,True,True,True,True,True
+I01-Q7B-A/r02,188.5,False,True,True,True,True,True,True,True
+"T02-A/r01 (이력 부족 t₀=5 s, L=8 s)",5.0,True,True,True,True,True,True,True,True

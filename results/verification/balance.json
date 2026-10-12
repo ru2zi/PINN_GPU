@@ -1,0 +1,16 @@
+{
+ "exact_alpha1": {
+  "E_in_J": 814839.9323355556,
+  "rel_residual": 1.5715583997286695e-15
+ },
+ "exact_alpha_varying": {
+  "E_in_J": 814839.9323355556,
+  "rel_residual": 3.428854690317097e-15
+ },
+ "rk4_rha_decreasing": {
+  "E_in_J": 814839.9323355478,
+  "rel_residual": 9.857957234661749e-15
+ },
+ "criterion": 1e-06,
+ "passed": true
+}

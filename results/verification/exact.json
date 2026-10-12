@@ -1,0 +1,33 @@
+{
+ "params": {
+  "Cg": 13.651136930826915,
+  "Ch": 4656.804435975711,
+  "Rgh": 0.02938833333333333,
+  "Rha": 0.00877833333333333,
+  "alpha": 1.0
+ },
+ "step": {
+  "state_max_abs_error_K": {
+   "exact_numpy": 9.379164112033322e-13,
+   "rk4_dt0p001": 1.9966250874858815e-12,
+   "torchdiffeq_dopri5": 1.2944489924393565e-08
+  },
+  "bin_average_max_abs_error_K": {
+   "exact_numpy": 9.166001291305292e-13,
+   "exact_torch": 9.237055564881302e-13,
+   "rk4_dt0p001": 7.542411140093463e-11
+  },
+  "endpoint_vs_integral_first_bin_K": 1.1548925894564803,
+  "endpoint_vs_integral_rms_first_60s_K": 0.11026147085508951,
+  "endpoint_vs_integral_rms_300s_K": 0.049311890256925305,
+  "criterion_K": 1e-06,
+  "passed": true
+ },
+ "varying_alpha": {
+  "n_steps": 15376,
+  "max_abs_error_K": 1.846621699996831e-08,
+  "criterion_K": 0.0001,
+  "passed": true
+ },
+ "passed": true
+}
